@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "firebase-deploy": "cp -r build functions/ && firebase deploy",
+    "log-functions": "cd functions && npm run logs"
   },
   "dependencies": {
     "next": "9.4.4",
